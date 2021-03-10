@@ -28,7 +28,7 @@ namespace DictionarySinifi
             //5.Adımda akeys array inin 1 arttırmak için new lediğimizde,
             //yeni referans numarası aldığı için, önceki referans numarası gider.
             //Bu nedenle akeys de ki referans numarasını başka bir array e yedekleriz.
-            //(A[] dtempArray = akeys;) (--6.Adım--)
+            //(A[] atempArray = akeys;) (--6.Adım--)
             akeys = new A[akeys.Length + 1];
             //Dizilere eleman ekleyebilmek için, akeys ve dkeys dizilerinde,
             //eleman sayısını bir arttırmak gerekiyor.
@@ -46,8 +46,8 @@ namespace DictionarySinifi
             //Bunun için dizileri new ledik.(dkeys = new D[akeys.Length + 1];) (--5.Adım--)
 
             for (int i = 0; i < atempArray.Length; i++)
-            //6.Adımda atemparray da yedeklediğimiz akeys ve dkeys array lerinin
-            //elemanlarını geri çağırmak için for döngüsü oluşturduk.
+            //6.Adımda atempArray ya da dtempArray da yedeklediğimiz akeys ve dkeys array lerinin
+            //elemanlarını geri çağırmak için atempArray da bir for döngüsü oluşturduk.
             //Bunun için dtempArray i de kullanabilirdik, fark etmiyor. (--7.Adım--)
 
             {
