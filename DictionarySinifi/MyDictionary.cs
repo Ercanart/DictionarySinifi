@@ -47,18 +47,18 @@ namespace DictionarySinifi
 
             for (int i = 0; i < atempArray.Length; i++)
             //6.Adımda atemparray da yedeklediğimiz akeys ve dkeys array lerinin
-            //elemanlarını geri çağırmak için for döngüsü oluşturduk.(--7.Adım--)
+            //elemanlarını geri çağırmak için for döngüsü oluşturduk.
+            //Bunun için dtempArray i de kullanabilirdik, fark etmiyor. (--7.Adım--)
 
             {
                 akeys[i] = atempArray[i];
                 dkeys[i] = dtempArray[i];
-                //.atempArray in bütün elemanlarını tekrar akeys e ve dkeys e
-                //atıyoruz.Bunun için dtempArray i de kullanabilirdik,
-                //fark etmiyor.(--8.Adım--)
+                //.atempArray in bütün elemanlarını tekrar akeys e ve dkeys e atıyoruz.
+                //(--8.Adım--)
                 //Bu noktada dtempArray için ayrı bir for döngüsü oluşturmaya gerek kalmadı.
                 //Çünkü döngü, [i] inci eleman sayısına göre çalışyor ve ayrıca akeys ve dkeys 
-                //array lerinin eleman sayısı da aynıdır.Bu nedenle (dkeys[i] = dtempArray[i];)
-                //(dkeys[i] = dtempArray[i];) Eşitlemesi ile dkeys array ini de,
+                //array lerinin eleman sayısı da aynıdır.Bu nedenle (akeys[i] = atempArray[i];)
+                //(dkeys[i] = dtempArray[i];) Eşitlemeleri ile akeys ve dkeys arraylerini de,
                 //döngüye dahil etmiş olduk.
 
 
