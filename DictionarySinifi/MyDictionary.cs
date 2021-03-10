@@ -25,7 +25,7 @@ namespace DictionarySinifi
         public void Add(A akey, D dkey)
         {
             A[] atempArray = akeys;
-            //5.Adımda akeys array inin 1 arttırmak için new lediğimizde,
+            //5.Adımda akeys array ini 1 arttırmak için new lediğimizde,
             //yeni referans numarası aldığı için, önceki referans numarası gider.
             //Bu nedenle akeys de ki referans numarasını başka bir array e yedekleriz.
             //(A[] atempArray = akeys;) (--6.Adım--)
@@ -36,7 +36,7 @@ namespace DictionarySinifi
 
 
             D[] dtempArray = dkeys;
-            //5.Adımda dkeys array inin 1 arttırmak için new lediğimizde,
+            //5.Adımda dkeys array ini 1 arttırmak için new lediğimizde,
             //yeni referans numarası aldığı için, önceki referans numarası gider.
             //Bu nedenle dkeys de ki referans numarasını başka bir array e yedekleriz.
             //(D[] dtempArray = dkeys;) (--6.Adım--)
@@ -53,12 +53,13 @@ namespace DictionarySinifi
             {
                 akeys[i] = atempArray[i];
                 dkeys[i] = dtempArray[i];
-                //.atempArray in bütün elemanlarını tekrar akeys e ve dkeys e atıyoruz.
-                //(--8.Adım--)
+                //atempArray in ve dtempArray in bütün elemanlarını,
+                //[i] (i. eleman) parametresi ile tekrar akeys e ve dkeys e atıyoruz.
+                // akeys[i] = atempArray[i]; -- dkeys[i] = dtempArray[i]; (--8.Adım--)
                 //Bu noktada dtempArray için ayrı bir for döngüsü oluşturmaya gerek kalmadı.
                 //Çünkü döngü, [i] inci eleman sayısına göre çalışyor ve ayrıca akeys ve dkeys 
-                //array lerinin eleman sayısı da aynıdır.Bu nedenle (akeys[i] = atempArray[i];)
-                //(dkeys[i] = dtempArray[i];) Eşitlemeleri ile akeys ve dkeys arraylerini de,
+                //array lerinin eleman sayısı da aynı olmakta, bu nedenle,
+                //(dkeys[i] = dtempArray[i];) eşitlemesi ile dkeys array ini de,
                 //döngüye dahil etmiş olduk.
 
 
